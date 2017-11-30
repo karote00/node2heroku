@@ -1,10 +1,11 @@
 {
   "name": "node2heroku",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Practice deploy nodejs project to heroku",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "private": true,
+  "homepage": "https://github.com/karote00/node2heroku#readme",
+  "bugs": {
+    "url": "https://github.com/karote00/node2heroku/issues"
   },
   "repository": {
     "type": "git",
@@ -14,10 +15,17 @@
     "NodeJs",
     "Heroku"
   ],
-  "author": "Asa Tsai",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/karote00/node2heroku/issues"
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17"
   },
-  "homepage": "https://github.com/karote00/node2heroku#readme"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "author": "Asa Tsai",
+  "license": "MIT"
 }
