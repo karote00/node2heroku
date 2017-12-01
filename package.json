@@ -24,8 +24,8 @@
     "react-scripts": "1.0.17"
   },
   "scripts": {
-    "start": "node server",
-    "dev": "react-scripts start",
+    "dev": "node server",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
