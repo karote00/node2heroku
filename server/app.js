@@ -11,8 +11,8 @@ app.use(bodyParser.json());
 // app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'));
 
 // Serve static assets
-// app.use(express.static(path.resolve(__dirname, '..', 'build')));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.resolve(__dirname, '..', 'client/build')));
+// app.use(express.static(path.join(__dirname, 'public')));
 
 // app.set('/', path.join(__dirname, '/'));
 // app.set('view engine', 'ejs');
