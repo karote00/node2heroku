@@ -16,19 +16,13 @@
     "Heroku"
   ],
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.16.2",
     "morgan": "^1.9.0",
-    "path": "^0.12.7",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17"
+    "path": "^0.12.7"
   },
   "scripts": {
-    "dev": "node server",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "node server"
   },
   "author": "Asa Tsai",
   "license": "MIT"
