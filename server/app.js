@@ -12,21 +12,8 @@ app.use(bodyParser.json());
 
 // Serve static assets
 app.use(express.static(path.resolve(__dirname, '..', 'client/build')));
-// app.use(express.static(path.join(__dirname, 'public')));
-
-// app.set('/', path.join(__dirname, '/'));
-// app.set('view engine', 'ejs');
 
 // Always return the main index.html, so react-router render the route in the client
-// app.get('*', (req, res) => {
-//   res.sendFile(path.resolve(__dirname, '..', 'build', 'index.html'));
-// });
-// app.get('/', (req, res) => res.render('index'));
-// app.get('/', (req, res) => {
-// 	// res.render('index')
-// 	res.sendFile(path.resolve(__dirname, '..', 'public/index.html'));
-// 	// res.send('Hello World');
-// });
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '..', 'client/build/index.html'));
 });
