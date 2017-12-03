@@ -16,6 +16,7 @@
     "port": 5432
   },
   "production": {
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "use_env_variable": "DATABASE_URL"
   }
 }
