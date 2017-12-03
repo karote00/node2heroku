@@ -1,0 +1,21 @@
+{
+  "development": {
+    "username": "ASA",
+    "password": null,
+    "database": "node2heroku",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "port": 5432
+  },
+  "test": {
+    "username": "ASA",
+    "password": null,
+    "database": "node2heroku",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "port": 5432
+  },
+  "production": {
+    "dialect": "postgres"
+  }
+}

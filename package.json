@@ -19,11 +19,14 @@
     "body-parser": "^1.15.2",
     "express": "^4.16.2",
     "morgan": "^1.9.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "pg": "^7.4.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.25.1"
   },
   "scripts": {
     "start": "node server",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "heroku-postbuild": "npm i --prefix ./client && npm run build --prefix ./client"
   },
   "author": "Asa Tsai",
   "license": "MIT"

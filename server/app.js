@@ -1,9 +1,10 @@
 const express = require('express');
-// const morgan = require('morgan');
+const logger = require('morgan');
 const bodyParser	= require('body-parser');
 const path = require('path');
 const app = express();
 
+app.use(logger('dev'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
@@ -12,6 +13,8 @@ app.use(bodyParser.json());
 
 // Serve static assets
 app.use(express.static(path.resolve(__dirname, '..', 'client/build')));
+
+require('./routes')(app);
 
 // Always return the main index.html, so react-router render the route in the client
 app.get('*', (req, res) => {
